@@ -297,4 +297,7 @@ footer {
      position: relative;
      left:10px;
    }
+    #navbar-centrar{
+    width: 100%!important;
+   }
 }
