@@ -5,100 +5,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Alexis Cañete</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Portfolio de Alexis Cañete</title>
 </head>
 
 <body>
-    <div class="flecha">
+    <aside class="flecha">
         <a href="#navbar">
             <img src="images/flecha.png" alt="arriba">
         </a>
-    </div>
-    <nav class="navbar" id="navbar">
-        <div>
-            <ul class="links-navbar">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre_mi">Sobre mi</a></li>
-                <li><a href="#aptitudes">Aptitudes</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section class="inicio" id="inicio">
-        <div>
-            <img src="images/perfil.jpeg" alt="imagen de perfil" class="foto">
-        </div>
-        <div>
-            <h1>Alexis Cañete</h1>
-            <h4>Programador FullStack</h4>
-        </div>
-    </section>
-    <section class="sobre_mi " id="sobre_mi">
-        <div>
-            <h2>Sobre mi</h2>
-        </div>
-        <div class="contenedor">
-            <p>Saludos, soy un estudiante autodidacta de programación enfocado en el desarrollo web.</p>
-            <p>He completado los cursos de programación en C#, explorando tecnologías como Web ASP .Net, SQL, HTML, CSS,
-                JS,
-                GitHub y Bootstrap. Estos cursos fueron dirigidos por el Lic. Maximiliano Sar Fernández, además de haber
-                realizado ejercicios y formación complementaria en plataformas como FreeCodeCamp.</p>
-            <p>Mi trayectoria incluye experiencia en la creación de aplicaciones de escritorio y el desarrollo integral
-                de páginas web, abarcando tanto el frontend como el backend.</p>
-        </div>
-    </section>
-    <section class="aptitudes" id="aptitudes">
-        <h2>Aptitudes</h2>
-        <h4>Estas son algunas de las tecnologías de las que tengo conocimientos.</h4>
-        <div class="contenedor">
-            <div class="centrar">
-
+    </aside>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar" id="navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute start-50 w-100 translate-middle-x">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="link" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="link" aria-current="page" href="#sobre-mi">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="link" aria-current="page" href="#aptitudes">Aptitudes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="link" aria-current="page" href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="link" aria-current="page" href="#contacto">Contacto</a>
+                        </li>
+                        </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="inicio">
+            <div id="div-a-centrar">
+                <img src="images/perfil.jpeg" class="float-start img-fluid" id="foto-perfil"
+                    alt="foto de perfil de Alexis">
+            </div>
+            <div>
+                <h1 id="h1">Alexis Cañete</h1>
+                <h4 id="h4">Programador FullStack</h4>
+            </div>
+        </section>
+        <section class="sobre-mi " id="sobre-mi">
+            <h2 id="h2">Sobre mi</h2>
+            <div class="contenedor">
+                <p>Saludos, soy un estudiante autodidacta de programación enfocado en el desarrollo web.</p>
+                <p>He completado los cursos de programación en C#, explorando tecnologías como Web ASP .Net, SQL, HTML, CSS,
+                    JS,
+                    GitHub y Bootstrap. Estos cursos fueron dirigidos por el Lic. Maximiliano Sar Fernández, además de haber
+                    realizado ejercicios y formación complementaria en plataformas como FreeCodeCamp.</p>
+                <p>Mi trayectoria incluye experiencia en la creación de aplicaciones de escritorio y el desarrollo integral
+                    de páginas web, abarcando tanto el frontend como el backend.</p>
+            </div>
+        </section>
+        <section class="aptitudes" id="aptitudes">
+            <h2 id="h2">Aptitudes</h2>
+            <h4 id="h4">Estas son algunas de las tecnologías de las que tengo conocimientos.</h4>
+            <div class="contenedor centrar">
                 <img src="images/html.png" alt="Html" class="logo">
                 <img src="images/C.png" alt="C#" class="logo">
                 <img src="images/sql.png" alt="sql" class="logo">
                 <img src="images/git.png" alt="git" class="logo">
             </div>
-        </div>
-    </section>
-    <section class="proyectos" id="proyectos">
-        <h2>Mis proyectos</h2>
-        <div class="contenedor">
-            <div class="card">
-                <h5>Tienda</h5>
-                <div class="imagen"></div>
-                <p>Tienda virtual con funciones de login, listas y favoritos</p>
-                <button><a href="http://listaarticulos.somee.com/" target="_blank">Ver</a></button>
+        </section>
+        <section class="proyectos" id="proyectos">
+            <h2 id="h2">Mis proyectos</h2>
+            <div class="contenedor">
+                <div class="carta">
+                    <h5 id="h5">Tienda</h5>
+                    <div class="imagen"></div>
+                    <p>Tienda virtual con funciones de login, listas y favoritos</p>
+                    <button id="boton"><a href="http://listaarticulos.somee.com/" target="_blank">Ver</a></button>
+                </div>                
+    
+                <!--agregar mas proyectos-->
+    
             </div>
+        </section>
+        <footer class="contacto" id="contacto">
+            <h2 id="h2">Contactame</h2>
+            <div class="contenedor">
+                <div class="contenedor-logos">
+                    <a href="https://www.instagram.com/alexismc97/?hl=es-la" target="_blank">
+                        <img src="images/instagram.png" alt="instagram" class="logo-social">
+                    </a>
+                    <a href="https://github.com/alexismaximiliano" target="_blank">
+                        <img src="images/github.png" alt="github" class="logo-social">
+                    </a>
+                    <a href="https://www.linkedin.com/in/alexis-ca%C3%B1ete-3482011a6/" target="_blank">
+                        <img src="images/linkedin.png" alt="linkedin" class="logo-social">
+                    </a>
+                </div>
+                <div class="contenedor-email">
+                    <img src="images/mail.png" alt="Email" class="logo-email">
+                    <a href="mailto:alexismaxi97@gmail.com">alexismaxi97@gmail.com</a>
+                </div>
+            </div>
+        </footer>
+    </main>
 
-            <!--agregar mas proyectos-->
 
-        </div>
-    </section>
-    <footer class="contacto" id="contacto">
-        <h2>Contactame</h2>
-        <div class="contenedor">
-            <div class="contenedor-logos">
-                <a href="https://www.instagram.com/alexismc97/?hl=es-la" target="_blank">
-                    <img src="images/instagram.png" alt="instagram" class="logo-social">
-                </a>
-                <a href="https://github.com/alexismaximiliano" target="_blank">
-                    <img src="images/github.png" alt="github" class="logo-social">
-                </a>
-                <a href="https://www.linkedin.com/in/alexis-ca%C3%B1ete-3482011a6/" target="_blank">
-                    <img src="images/linkedin.png" alt="linkedin" class="logo-social">
-                </a>
-            </div>
-            <div class="contenedor-email">
-                <img src="images/mail.png" alt="Email" class="logo-email">
-                <a href="mailto:alexismaxi97@gmail.com">alexismaxi97@gmail.com</a>
-            </div>
-        </div>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+    </script>
+     <script>
+        $(document).ready(function() {
+          // Cierra el menú dropdown al hacer clic fuera de él
+          $(document).on("click", function(event) {
+            var $trigger = $(".navbar-toggler");
+            if ($trigger !== event.target && !$trigger.has(event.target).length) {
+              $(".navbar-collapse").collapse('hide');
+            }
+          });
+        });
+      </script>
 </body>
 
 </html>
-
-
-<!-- navbar sin alexis cañete con inicio y centrado todos los link -->
