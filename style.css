@@ -300,4 +300,7 @@ footer {
    #navbar-centrar{
     width: 100%!important;
    }
+    footer{
+    height: 60vh;
+   }
 }
