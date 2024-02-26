@@ -6,12 +6,13 @@
     --color-5: #EFE8DB;
 
 }
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -145,15 +146,17 @@ p {
 
 /* proyectos */
 
-#proyectos{
-height: 90vh;}
-
 #borde {
     border: 1px solid black;
 }
 
 .proyectos {
+    height: 90vh;
     background-color: var(--color-5);
+}
+
+.proyectos .contenedor {
+    display: flex;
 }
 
 .carta {
@@ -165,30 +168,54 @@ height: 90vh;}
     padding: 10px;
     overflow: hidden;
     position: relative;
+    margin: 10px;
 }
 
 .imagen {
     height: 60%;
     width: 100%;
     background-size: cover;
-    animation: cambio_imagen 15s infinite;
 }
 
-@keyframes cambio_imagen {
+.tienda {
+    animation: tienda 15s infinite;
+
+}
+
+.codepen {
+    animation: codepen 10s infinite;
+
+}
+
+@keyframes tienda {
     0% {
-        background-image: url('images/tienda/Captura1.JPG');
+        background-image: url('images/tienda/tienda1.JPG');
     }
 
     33% {
-        background-image: url('images/tienda/Captura2.JPG');
+        background-image: url('images/tienda/tienda2.JPG');
     }
 
     66% {
-        background-image: url('images/tienda/Captura3.JPG');
+        background-image: url('images/tienda/tienda3.JPG');
     }
 
     100% {
-        background-image: url('images/tienda/Captura4.JPG');
+        background-image: url('images/tienda/tienda4.JPG');
+    }
+}
+
+@keyframes codepen {
+    0% {
+        background-image: url(images/tienda/codepen1.JPG);
+    }
+
+    50% {
+        background-image: url(images/tienda/codepen2.JPG);
+    }
+
+    100% {
+        background-image: url(images/tienda/codepen1.JPG);
     }
 }
 
@@ -226,6 +253,7 @@ footer {
     justify-content: flex-start;
     align-items: center;
 }
+
 .logo-email {
     width: 2.5rem;
 }
@@ -256,7 +284,7 @@ footer {
 
 .contenedor-logos {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     width: auto;
 }
 
@@ -283,24 +311,36 @@ footer {
     .carta {
         width: auto;
     }
-    
-   .contenedor-logos{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr auto;
-    justify-items: stretch;
-    align-items: center;
-   }
-   .logo-social{
-    width: 80%;
-    padding: 0;
-     position: relative;
-     left:10px;
-   }
-   #navbar-centrar{
-    width: 100%!important;
-   }
-    footer{
-    height: 60vh;
-   }
+
+    .contenedor-logos {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 1fr auto;
+        justify-items: stretch;
+        align-items: center;
+    }
+
+    .logo-social {
+        width: 60%;
+        padding: 0;
+        position: relative;
+        left: 10px;
+    }
+
+    #navbar-centrar {
+        width: 100% !important;
+    }
+
+    footer {
+        height: 60vh;
+    }
+
+    #proyectos {
+        min-height: calc(100vh - 10px);
+        height: auto;
+        padding-bottom: 10px;
+    }
+    #achicar{
+        letter-spacing: normal;
+    }
 }
